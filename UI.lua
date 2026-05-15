@@ -90,8 +90,14 @@ local function StartCountdown(seconds)
 end
 
 function BreakTime.ShowBreakImage(imageIndex, seconds)
-    local path = string.format("Interface\\AddOns\\%s\\Images\\Break%d.tga", BreakTime.ADDON_NAME, imageIndex)
-    tex:SetTexture(path)
+    if imageIndex <= BreakTime.NUM_IMAGES then
+        local path = string.format("Interface\\AddOns\\%s\\Images\\Break%d.tga", BreakTime.ADDON_NAME, imageIndex)
+        tex:SetTexture(path)
+    else
+        local path = string.format("Interface\\AddOns\\%s\\Images\\MISSING.tga", BreakTime.ADDON_NAME)
+        tex:SetTexture(path)
+    end
+
     frame:Show()
 
     if seconds and seconds > 0 then

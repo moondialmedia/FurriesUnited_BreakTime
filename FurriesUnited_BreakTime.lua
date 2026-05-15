@@ -1,5 +1,5 @@
 BreakTime = {}
-BreakTime.NUM_IMAGES = 13
+BreakTime.NUM_IMAGES = 25
 BreakTime.CountdownTimer = nil
 BreakTime.ADDON_MESSAGE_PREFIX = "FUBT"
 BreakTime.ADDON_NAME = "FurriesUnited_BreakTime"
