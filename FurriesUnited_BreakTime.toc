@@ -1,0 +1,11 @@
+## Interface: 120000
+## Title: Furries United - BreakTime
+## Notes: Pops up a random break image for the raid
+## Version: 1.0.0
+## Author: Narri Fox
+## Category-enUS: Furries United
+
+FurriesUnited_BreakTime.lua
+UI.lua
+Hook_BreakTime.lua
+Hook_DBM.lua
